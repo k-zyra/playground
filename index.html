@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2ecc71;
+        }
+
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚀 GitHub Pages działa!</h1>
+        <p>Jeśli widzisz tę stronę, deploy zakończył się sukcesem.</p>
+        <p id="date"></p>
+    </div>
+
+    <script>
+        document.getElementById("date").textContent =
+            "Aktualna data: " + new Date().toLocaleString("pl-PL");
+    </script>
+
+</body>
+</html>
